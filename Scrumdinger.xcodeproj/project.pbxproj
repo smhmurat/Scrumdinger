@@ -15,7 +15,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		722E28EB2E491F5E001D2E04 /* Scrumdinger */ = {
+		72E92AF42E4A047800607C95 /* Scrumdinger */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -37,7 +37,7 @@
 		722E28E02E491F5E001D2E04 = {
 			isa = PBXGroup;
 			children = (
-				722E28EB2E491F5E001D2E04 /* Scrumdinger */,
+				72E92AF42E4A047800607C95 /* Scrumdinger */,
 				722E28EA2E491F5E001D2E04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				722E28EB2E491F5E001D2E04 /* Scrumdinger */,
+				72E92AF42E4A047800607C95 /* Scrumdinger */,
 			);
 			name = Scrumdinger;
 			packageProductDependencies = (
