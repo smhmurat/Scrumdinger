@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		722E28F92E492BFA001D2E04 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 722E28F82E492BFA001D2E04 /* ThemeKit */; };
+		724388A72E4B5A4900C207D4 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 724388A62E4B5A4900C207D4 /* TimerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				722E28F92E492BFA001D2E04 /* ThemeKit in Frameworks */,
+				724388A72E4B5A4900C207D4 /* TimerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = Scrumdinger;
 			packageProductDependencies = (
 				722E28F82E492BFA001D2E04 /* ThemeKit */,
+				724388A62E4B5A4900C207D4 /* TimerKit */,
 			);
 			productName = Scrumdinger;
 			productReference = 722E28E92E491F5E001D2E04 /* Scrumdinger.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				722E28F72E492BFA001D2E04 /* XCLocalSwiftPackageReference "../../Desktop/CreatingACardView/StartingProject/TutorialResources/ThemeKit" */,
+				724388A52E4B5A4900C207D4 /* XCLocalSwiftPackageReference "Resources/TimerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 722E28EA2E491F5E001D2E04 /* Products */;
@@ -335,12 +339,20 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../Desktop/CreatingACardView/StartingProject/TutorialResources/ThemeKit;
 		};
+		724388A52E4B5A4900C207D4 /* XCLocalSwiftPackageReference "Resources/TimerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Resources/TimerKit;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		722E28F82E492BFA001D2E04 /* ThemeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ThemeKit;
+		};
+		724388A62E4B5A4900C207D4 /* TimerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TimerKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

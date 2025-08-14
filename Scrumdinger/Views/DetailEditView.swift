@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    @State private var scrum = DailyScrum.emptyScrum
+    @Binding var scrum: DailyScrum
     @State private var attendeeName = ""
+    let saveEdits: (DailyScrum) -> Void
+    
+    @Environment(\.dismiss) private var dismiss
+    
     
     var body: some View {
         Form {
@@ -24,6 +28,7 @@ struct DetailEditView: View {
                     Text("\(scrum.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $scrum.theme)
             }
             Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) {attendee in
@@ -48,9 +53,23 @@ struct DetailEditView: View {
                 }
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Cancel") {
+                    dismiss()
+                }
+            }
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Done") {
+                    saveEdits(scrum)
+                    dismiss()
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    DetailEditView()
+    @Previewable @State var scrum = DailyScrum.sampleData[0]
+    DetailEditView(scrum: $scrum, saveEdits: { _ in})
 }
